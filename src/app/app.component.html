@@ -1,0 +1,55 @@
+
+
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" ><h1 class="d-inline"><i class="fab fa-shopware mx-2 " ></i></h1><h3 style="font-family: 'Titillium Web', sans-serif;" class="d-inline fs-bold">S Electronics</h3></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+           
+            <a class="nav-link text-white d-inline"  routerLink="home" routerLinkActive="active">  <i class="fas fa-home text-dark"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link text-white d-inline" routerLink="register" routerLinkActive="active"><i class="fas fa-calendar-check text-dark"></i>Register</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link text-white d-inline" routerLink="login" routerLinkActive="active"><i class="fas fa-sign-in-alt text-dark"></i>Login</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link text-white d-inline" routerLink="contactus" routerLinkActive="active"><i class="fas fa-mail-bulk text-dark"></i>ContactUs</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link text-white d-inline" routerLink="products" routerLinkActive="active"><i class="fas fa-boxes text-dark"></i>Products</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link text-white d-inline" routerLink="test" routerLinkActive="active">Test</a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link text-white d-inline" routerLink="users" routerLinkActive="active">Users</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+<!-- nest products component -->
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+
+<!-- nest footer component -->
+<div class="mt-auto" >
+  <app-footer></app-footer>
+</div>

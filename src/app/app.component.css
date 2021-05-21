@@ -1,0 +1,11 @@
+.nav-item:hover{
+    background-color: rgb(54, 84, 110);
+    border-radius: 2px;
+}
+li{
+    padding: 10px 0px ;
+}
+i{
+    padding-right: 10px;
+}
+

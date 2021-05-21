@@ -1,0 +1,8 @@
+<div style="width:75%; padding-top:30px; text-align: center; margin: auto;" >
+    <h1 class="bg-secondary p-3">Users List</h1>
+    <ul class="list-group">
+        <li class="list-group-item p-2" style="background-color: rgb(201, 183, 159);" *ngFor="let obj of userdata" >
+             <button class="btn btn-success" style="width: 300px;" (click)="onSelectId(obj.id)">{{obj.id}} | {{obj.email}}</button>
+         </li>
+    </ul>
+</div>

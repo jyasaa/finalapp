@@ -1,0 +1,14 @@
+<h1 class="text-center mb-5 bg-info" style="margin-top: 200px">Users Data Table</h1>
+<table class="table table-bordered table-striped table-hover bg-white text-dark text-center " style="margin-bottom: 175px;">
+   <thead class="text-dark table bg-primary text-bold border border-bottom border-2 border-dark">
+  <tr>
+      <th class="p-4">ID</th>
+  </tr>
+   </thead>
+   <tbody class=" text-dark border border-bottom border-2 border-dark">
+        <tr *ngFor="let obj of mypost">
+            <td><button class="btn btn-sm btn-info " (click)="onSelectId(obj.id)">{{obj.id}}</button></td>
+
+        </tr>
+   </tbody>
+</table>

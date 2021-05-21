@@ -1,0 +1,189 @@
+{
+  "mobiles": [
+    {
+      "id": 1,
+      "productTitle": "Apple",
+      "description": " Iphone 11",
+      "productImage": "https://cdn.vox-cdn.com/thumbor/nCf9W4NdCf3O2ZbNVjPcip6rtSQ=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65225607/akrales_190913_3666_0391.21.jpg",
+      "button": "Add to Cart "
+    },
+    {
+      "id": 2,
+      "productTitle": "Oneplus",
+      "description": "Oneplus 8",
+      "productImage": "https://fdn.gsmarena.com/imgroot/news/20/05/oneplus-8-8-pro-india-sales-date/-727w2/gsmarena_002.jpg",
+      "button": "Add to Cart "
+    },
+    {
+      "id": 3,
+      "productTitle": "Apple",
+      "description": "Iphone 12",
+      "productImage": "https://fdn.gsmarena.com/imgroot/reviews/20/apple-iphone-12-pro-max/lifestyle/-1200w5/gsmarena_006.jpg",
+      "button": "Add to Cart "
+    },
+    {
+      "id": 4,
+      "productTitle": "Samsung",
+      "description": "Galaxy S20",
+      "productImage": "https://cdn.vox-cdn.com/thumbor/2TJ8xu8rQmy9wzWAKGLBSameX-4=/0x0:2040x1360/1200x0/filters:focal(0x0:2040x1360):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19710523/vpavic_200206_3899_still_0004.jpg",
+      "button": "Add to Cart "
+    },
+    {
+      "id": 5,
+      "productTitle": "Oneplus",
+      "description": "Oneplus 7 Pro",
+      "productImage": "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2019/05/14/823626-oneplus-seven.jpg",
+      "button": "Add to Cart "
+    },
+    {
+      "id": 6,
+      "productTitle": "Mi",
+      "description": "Mi 10",
+      "productImage": "https://i.gadgets360cdn.com/large/mi_10_title_1581583367320.jpg",
+      "button": "Add to Cart "
+    },
+    {
+      "id": 7,
+      "productTitle": "Realme",
+      "description": "Realme X",
+      "productImage": "https://i.gadgets360cdn.com/large/realme_x_realme_3i_price_in_india_realme_1563169410137.jpg",
+      "button": "Add to Cart "
+    },
+    {
+      "id": 8,
+      "productTitle": "Samsung",
+      "description": "Galaxy M31",
+      "productImage": "https://i.ytimg.com/vi/bDMpIusKUEE/maxresdefault.jpg",
+      "button": "Add to Cart "
+    },
+    {
+      "productTitle": "Apple",
+      "description": "Iphone X",
+      "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LFVCMUwjGOowM46GAEtTeoyTAw4PKFPP9A&usqp=CAU",
+      "button": "Add to Cart",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "ironman@gmail.com",
+      "name": "Tony Stark",
+      "profilePic": "https://dailysuperheroes.com/wp-content/uploads/2020/02/tony-stark.jpg",
+      "address": {
+        "city": "Hyderabad",
+        "state": "Telangana"
+      },
+      "profession": "Ironman",
+      "mobileno": "+91 9999999999"
+    },
+    {
+      "id": 2,
+      "email": "cap@gmail.com",
+      "name": "Steve Rogers",
+      "profilePic": "https://pyxis.nymag.com/v1/imgs/338/9c1/462cbd8aec032b6e7648a2ba76314afdd1-25-captain-america-chris-evans.2x.rhorizontal.w710.jpg",
+      "address": {
+        "city": "Delhi",
+        "state": "Delhi"
+      },
+      "profession": "Captain America",
+      "mobileno": "+91 9999999999"
+    },
+    {
+      "id": 3,
+      "email": "nat@gmail.com",
+      "name": "Natasha Romanoff",
+      "profilePic": "https://fangirlish.com/wp-content/uploads/2019/10/Natasha-Romanoff.jpg",
+      "address": {
+        "city": "Banglore",
+        "state": "Karnataka"
+      },
+      "profession": "Spy",
+      "mobileno": "+91 9999999999"
+    },
+    {
+      "id": 4,
+      "email": "banner@gmail.com",
+      "name": "Bruce Banner",
+      "profilePic": "https://i.pinimg.com/originals/a7/d7/5a/a7d75a8e703f8560be6cafc62f85ebf9.jpg",
+      "address": {
+        "city": "Chennai",
+        "state": "TamilNadu"
+      },
+      "profession": "Hulk",
+      "mobileno": "+91 9999999999"
+    },
+    {
+      "id": 5,
+      "email": "thor@gmail.com",
+      "name": "Thor",
+      "profilePic": "https://cdn.vox-cdn.com/thumbor/dvMjjuYxDWDh0E9bZGOrx7ZtJP8=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/9490719/thor_big.jpg",
+      "address": {
+        "city": "Mumbai",
+        "state": "Maharashtra"
+      },
+      "profession": "God of Asgard",
+      "mobileno": "+91 9999999999"
+    },
+    {
+      "id": 6,
+      "email": "sam@gmail.com",
+      "name": "Sam Wilson",
+      "profilePic": "https://cdn.flickeringmyth.com/wp-content/uploads/2021/05/Captain-America-Sam-Wilson-Hot-Toys-1-1.jpg",
+      "address": {
+        "city": "Warangal",
+        "state": "Telangana"
+      },
+      "profession": "Soldier",
+      "mobileno": "+91 9999999999"
+    },
+    {
+      "id": 7,
+      "email": "bucky@gmail.com",
+      "name": "Bucky Barnes",
+      "profilePic": "https://pbs.twimg.com/profile_images/1373348513103413251/El_GMhFC_400x400.jpg",
+      "address": {
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "profession": "Soldier",
+      "mobileno": "+91 9999999999"
+    },
+    {
+      "id": 8,
+      "email": "clint@gmail.com",
+      "name": "Clint Barton",
+      "profilePic": "https://e7.pngegg.com/pngimages/254/889/png-clipart-jeremy-renner-clint-barton-iron-man-hulk-loki-hawkeye-comics-avengers.png",
+      "address": {
+        "city": "Goa",
+        "state": "Goa"
+      },
+      "profession": "Shooter",
+      "mobileno": "+91 9999999999"
+    },
+    {
+      "id": 9,
+      "email": "wanda@gmail.com",
+      "name": "Wanda Maximoff",
+      "profilePic": "https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/canvas/2021/02/26/f19ed45d-0ed4-4fd2-a101-8d40d8e754de_1d72b820.jpg?itok=tcv6GPw-&v=1614324633",
+      "address": {
+        "city": "Kolkata",
+        "state": "WestBengal"
+      },
+      "profession": "Witch",
+      "mobileno": "+91 9999999999"
+    },
+    {
+      "id": 10,
+      "email": "vision@gmail.com",
+      "name": "Vision",
+      "profilePic": "https://decider.com/wp-content/uploads/2021/03/vision-wandavision-finale-1.jpg?quality=80&strip=all&w=1200",
+      "address": {
+        "city": "Punjab",
+        "state": "Haryana"
+      },
+      "profession": "Humanoid",
+      "mobileno": "+91 9999999999"
+    }
+  ]
+}

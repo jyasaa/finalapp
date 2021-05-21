@@ -1,0 +1,37 @@
+
+  <div class="row">
+
+    <div class="col-sm-2 col-md-4"></div>
+    <div class="col-sm-8 col-md-4">
+        <div class="main">
+          <h2 id="heading" class=" text-center ">Login </h2> 
+
+          <form class="text-white" #ref="ngForm" (ngSubmit)="onLogin(ref)" >
+            <div class="mb-3">
+                <label for="unm" class="form-label">username</label>
+                <input type="text" class="form-control" id="unm"  name="username" autocomplete="off"  ngModel>
+              </div>
+              <div class="mb-3">
+                <hr>
+                <label for="pwd" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pwd" name="password" autocomplete="off" placeholder="Min of 8 characters" ngModel >
+              </div>
+              <hr>
+              <button type="submit" class="btn"><i class="far fa-paper-plane mx-2"></i>Login</button>
+
+        </form>
+        </div>
+    </div>
+    <div class="col-sm-2 col-md-4"></div>
+
+</div>
+
+
+
+        
+            
+
+
+
+
+

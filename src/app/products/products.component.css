@@ -1,0 +1,10 @@
+button{
+    color: white;
+    background-color: rgb(209, 179, 133);
+    border: 1px solid black;
+}
+
+button:focus{
+    background-color: rgb(90, 70, 19);
+    border: none;
+}

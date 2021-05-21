@@ -1,0 +1,28 @@
+.whole{
+    text-align: center;
+    margin-top: 10px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(to right top, #65dfc9,#6cdbeb);
+}
+
+.content{
+    margin: 0px 200px;
+    padding: 40px 0px;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.2));
+    border-radius: 5px; 
+}
+
+div h1{
+    color: rgb(94, 94, 94);
+}
+div h1 span{
+    color: rgb(126, 126, 38);
+}
+div h1 i{
+    color: black;
+    padding-right: 20px;
+}

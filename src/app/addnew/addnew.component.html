@@ -1,0 +1,43 @@
+<!-- <div class="row mt-5">
+    <div class="col-sm-2 col-md-3"></div>
+    <div class="col-sm-8 col-md-6">
+        <form (ngSumbit)="onSumbitNewMobile()">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="brand" name="productTitle" [(ngModel)]="mobileModel.productTitle" autocomplete="off" >
+                <label for="brand">Brand</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="url" name="productImage" [(ngModel)]="mobileModel.productImage" autocomplete="off">
+                <label for="url">Image URL</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="desc" name="description"[(ngModel)]="mobileModel.description" autocomplete="off">
+                <label for="desc">Description</label>
+            </div>
+            <button class="btn btn-warning w-25 float-end" type="submit">Add</button>
+        </form>
+    </div>
+    <div class="col-sm-2 col-md-6"></div>
+</div> -->
+
+<div class="row mt-5">
+  <div class="col-sm-2 col-md-3"></div>
+  <div class="col-sm-8 col-md-6">
+    <form (ngSubmit)="onSubmitNewMobile()">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="pt"  name="productTitle" autocomplete="off" [(ngModel)]="mobileModel.productTitle">
+        <label for="pt">Brand</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="pi"  name="productImage" autocomplete="off" [(ngModel)]="mobileModel.productImage">
+        <label for="pi">Image URL</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="pd"  name="description" autocomplete="off" [(ngModel)]="mobileModel.description">
+        <label for="pd">Descrption</label>
+      </div>
+      <button class="btn btn-warning float-end w-25" type="submit">Add</button>
+    </form>
+  </div>
+  <div class="col-sm-2 col-md-3"></div>
+</div>

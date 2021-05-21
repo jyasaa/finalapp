@@ -1,0 +1,33 @@
+#formstyle{
+    display: block;
+    margin: auto;
+}
+
+#heading{
+
+    text-align: center;
+    margin: auto !important;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+label{
+    margin: 10px;
+}
+input{
+    box-shadow: none !important;
+    border: none;
+    border-radius:0px;
+    border-bottom: black solid 2px;
+}
+
+button{
+    margin-top: 70px;
+    display: block;
+    margin: auto;
+}
+h6{
+    text-align: left;
+    display: inline;
+}
