@@ -19,7 +19,14 @@ export class LaptopsComponent implements OnInit  {
 
   ngOnInit(){
     //obj inilialisation logic
-    this.laptops=this.dsObj.getLaptopsData();
+    this.dsObj.getLaptopsData().subscribe(
+      data=>{
+        this.laptops=data;
+      },
+      err=>{
+        console.log("error is ",err);
+      }
+    );
   }
 
 }

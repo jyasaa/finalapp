@@ -1,8 +1,65 @@
-<div class="row row-cols-1 row-cols-sm-1 row-cols-lg-4 row-cols-md-3 mt-5 g-4">
-    
-    <div class="col mb-3" *ngFor="let prObj of mobiles">
-        <app-product-details [productObj]=prObj (myEvent)="productsSentByChild($event)" ></app-product-details>
-    </div>
-    
+<div class="table-content mt-5">
+
+    <form #ref="ngForm" (ngSubmit)="saveMobile(ref.value)">
+
+        <table class="table text-center text-dark">
+            <thead class="mt-5">
+                <th>Brand</th>
+                <th>Description</th>
+                <th>Image</th>
+            </thead>
+            
+            <tbody>
+                
+                <tr *ngFor="let mobile of mobiles;let ind=index">
+                    <!-- product title -->
+                    <td>
+                        <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
+                            {{mobile.productTitle}}
+                        </span>
+                        <span *ngIf="editMobileStatus && editMobileIndex==ind">
+                            <input type="text" name="productTitle"  [(ngModel)]="editMobileObj.productTitle">
+                        </span>
+                    </td>
+
+                    <!-- product description -->
+                    <td>
+                        <span *ngIf="!editMobileStatus || editMobileIndex!==ind" >
+                            {{mobile.description}}
+                        </span>
+                        <span *ngIf="editMobileStatus && editMobileIndex==ind">
+                            <input type="text" name="description"  [(ngModel)]="editMobileObj.description">
+                        </span>
+                    </td>
+
+
+                    <!-- product image -->
+                    <td>
+                        <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
+                            <img src={{mobile.productImage}} alt="" width="150px">
+                        </span>
+                        <span *ngIf="editMobileStatus && editMobileIndex==ind">
+                            <input type="text" name="productImage"  [(ngModel)]="editMobileObj.productImage">
+                        </span>
+                    </td>
+
+
+
+                    <!-- edit,delete/save buttons-->
+                    <td>
+                        <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-warning" (click)="editMobile(mobile,ind)"><i class="fas fa-edit"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                              </div>
+                        </span>
+                        <span *ngIf="editMobileStatus && editMobileIndex==ind" style="width: 100%; margin-right: 20px;">
+                            <button class="btn btn-success" type="submit"  ><i class="fas fa-save"></i></button>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
 
 </div>

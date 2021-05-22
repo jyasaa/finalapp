@@ -21,4 +21,8 @@ export class MobilesService {
       //to create new mobile data
       return this.hc.post("http://localhost:3000/mobiles",mobileObj);
   }
+
+  updateMobile(modifiedMobileObj):Observable<any>{
+    return this.hc.put("http://localhost:3000/mobiles/"+modifiedMobileObj.id,modifiedMobileObj);
+  }
 }

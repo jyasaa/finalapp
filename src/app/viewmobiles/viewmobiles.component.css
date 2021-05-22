@@ -1,0 +1,11 @@
+.table-content{
+    background-color: white;
+    background-size: 100%;
+    font-size: 2em;
+}
+
+
+input{
+    width:100%;
+    border-radius: 5px;
+}

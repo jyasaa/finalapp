@@ -18,7 +18,14 @@ export class SwatchesComponent implements OnInit  {
 
   ngOnInit()
   {
-    this.swatches=this.dsObj.getSwatchesData();
+    this.dsObj.getSwatchesData().subscribe(
+      data=>{
+        this.swatches=data;
+      },
+      err=>{
+        console.log("error is ",err);
+      }
+    );
   }
  
 
