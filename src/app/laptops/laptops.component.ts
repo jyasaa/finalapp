@@ -9,7 +9,7 @@ import { LaptopsService } from '../laptops.service';
 })
 export class LaptopsComponent implements OnInit  {
 
- 
+  searchTerm:string;
 
   laptops:Product[];
   //inject obj for Dataservice class

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {NgForm} from '@angular/forms'
+import { Router } from '@angular/router';
+import { DataService } from './data.service';
 
 import {User} from './models/user.model'
 
@@ -9,7 +11,7 @@ import {User} from './models/user.model'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   
+  constructor(public dsObj:DataService, ){ }
  
 
   userObj:User={username:"",dob:"",mail:""};
@@ -27,7 +29,7 @@ export class AppComponent {
 
      //console.log(this.userObj)
 
-     this.users.push(this.userObj)
+     this.users.push(this.userObj);
 
     this.userObj={username:"",dob:"",mail:""};
 
@@ -35,10 +37,12 @@ export class AppComponent {
 
    deleteUser(index)
    {
-    this.users.splice(index,1)
+    this.users.splice(index,1);
    }
+
+   
  
 }
 
 
-
+ 

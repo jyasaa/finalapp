@@ -8,17 +8,17 @@
       "button": "Add to Cart "
     },
     {
-      "id": 2,
       "productTitle": "Oneplus",
       "description": "Oneplus 8",
       "productImage": "https://fdn.gsmarena.com/imgroot/news/20/05/oneplus-8-8-pro-india-sales-date/-727w2/gsmarena_002.jpg",
+      "id": 2,
       "button": "Add to Cart "
     },
     {
-      "id": 3,
       "productTitle": "Apple",
       "description": "Iphone 12",
       "productImage": "https://fdn.gsmarena.com/imgroot/reviews/20/apple-iphone-12-pro-max/lifestyle/-1200w5/gsmarena_006.jpg",
+      "id": 3,
       "button": "Add to Cart "
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "productTitle": "Apple",
-      "description": "Iphone X",
+      "description": "IphoneX",
       "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6LFVCMUwjGOowM46GAEtTeoyTAw4PKFPP9A&usqp=CAU",
       "button": "Add to Cart",
       "id": 9

@@ -20,7 +20,7 @@ export class AddnewComponent implements OnInit {
     this.msObj.createNewMobile(this.mobileModel).subscribe(
       res=>{
         //after creation of new mobile... navigate to view mobiles
-        this.router.navigateByUrl("products/mobiles");
+        this.router.navigateByUrl("admin/viewmobiles");
       },
       err=>{
         console.log("error occured",err);

@@ -9,6 +9,8 @@ import { SwatchesService } from '../swatches.service';
 })
 export class SwatchesComponent implements OnInit  {
 
+  searchTerm:string;
+
   swatches:Product[];
 
   constructor(private dsObj:SwatchesService)

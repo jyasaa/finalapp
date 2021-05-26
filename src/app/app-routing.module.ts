@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddnewComponent } from './addnew/addnew.component';
+import { AdminGuard } from './admin.guard';
 import { ContactusComponent } from './contactus/contactus.component';
 import { HomeComponent } from './home/home.component';
 import { LaptopsComponent } from './laptops/laptops.component';
@@ -36,7 +37,7 @@ const routes: Routes = [
   {path:'users/:id',component:UserdetailsComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'},
 
-  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),canActivate:[AdminGuard] },
 
   {path:'**',component:PagenotfoundComponent}
 ];

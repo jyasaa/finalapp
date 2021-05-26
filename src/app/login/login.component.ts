@@ -21,6 +21,9 @@ export class LoginComponent implements OnInit {
           alert("invalid credentials")
       }
       else{
+        //save username in local storage
+        localStorage.setItem("username","admin");
+        //navigate to admin component
         this.router.navigateByUrl("/admin")
       }
   }

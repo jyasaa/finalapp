@@ -17,9 +17,15 @@
             
             <a class="nav-link text-white d-inline" routerLink="register" routerLinkActive="active"><i class="fas fa-calendar-check text-dark"></i>Register</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" *ngIf="!dsObj.userLoginStatus()" >
             
-            <a class="nav-link text-white d-inline" routerLink="login" routerLinkActive="active"><i class="fas fa-sign-in-alt text-dark"></i>Login</a>
+            <a class="nav-link text-white d-inline" routerLink="login" routerLinkActive="active">
+              <i class="fas fa-sign-in-alt text-dark"></i>Login</a>
+          </li>
+          <li class="nav-item" *ngIf="dsObj.userLoginStatus()"> 
+            
+            <a class="nav-link text-white d-inline" routerLink="login" routerLinkActive="active" (click)="dsObj.userLogout()" >
+              <i class="fas fa-sign-in-alt text-dark" ></i>Logout</a>
           </li>
           <li class="nav-item">
             

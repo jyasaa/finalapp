@@ -8,8 +8,20 @@ export class DataService {
 
   constructor() { }
   
+     //to check login status
+     userLoginStatus():boolean{
+      if(localStorage.getItem("username")==null){
+        return false;
+      }
+      else{
+        return true;
+      }
+    }
 
-  
+    //logout
+    userLogout(){
+      localStorage.clear();
+    }
 
  
 

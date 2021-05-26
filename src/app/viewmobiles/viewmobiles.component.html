@@ -11,19 +11,19 @@
             
             <tbody>
                 
-                <tr *ngFor="let mobile of mobiles;let ind=index">
+                <tr *ngFor="let mobile of mobiles;let ind=index" style="height: 130px;">
                     <!-- product title -->
-                    <td>
+                    <td style="width: 500px;">
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
                             {{mobile.productTitle}}
                         </span>
-                        <span *ngIf="editMobileStatus && editMobileIndex==ind">
+                        <span *ngIf="editMobileStatus && editMobileIndex==ind" >
                             <input type="text" name="productTitle"  [(ngModel)]="editMobileObj.productTitle">
                         </span>
                     </td>
 
-                    <!-- product description -->
-                    <td>
+                    <!-- product description --> 
+                    <td style="width: 500px;">
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind" >
                             {{mobile.description}}
                         </span>
@@ -34,7 +34,7 @@
 
 
                     <!-- product image -->
-                    <td>
+                    <td style="width: 500px;">
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
                             <img src={{mobile.productImage}} alt="" width="150px">
                         </span>
@@ -50,11 +50,11 @@
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="btn btn-warning" (click)="editMobile(mobile,ind)"><i class="fas fa-edit"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                                <button type="button" class="btn btn-danger" (click)="deleteMobile(mobile)"><i class="fas fa-trash"></i></button>
                               </div>
                         </span>
                         <span *ngIf="editMobileStatus && editMobileIndex==ind" style="width: 100%; margin-right: 20px;">
-                            <button class="btn btn-success" type="submit"  ><i class="fas fa-save"></i></button>
+                            <button class="btn btn-success" type="submit"   ><i class="fas fa-save"></i></button>
                         </span>
                     </td>
                 </tr>
@@ -62,4 +62,4 @@
         </table>
     </form>
 
-</div>
+</div> 
