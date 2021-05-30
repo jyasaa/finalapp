@@ -32,7 +32,8 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { AddnewComponent } from './addnew/addnew.component';
 import { ViewmobilesComponent } from './viewmobiles/viewmobiles.component';
 import { SquarePipe } from './square.pipe';
-import { SearchPipe } from './search.pipe';
+import { SharedModule } from './shared/shared.module';
+
 
 @NgModule({
   declarations: [
@@ -64,13 +65,13 @@ import { SearchPipe } from './search.pipe';
     AddnewComponent,
     ViewmobilesComponent,
     SquarePipe,
-    SearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

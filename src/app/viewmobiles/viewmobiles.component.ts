@@ -4,6 +4,7 @@ import { MobilesService } from '../mobiles.service';
 import { Mobile } from '../models/mobile.model';
 import {Product} from '../models/product.model';
 
+
 @Component({
   selector: 'app-viewmobiles',
   templateUrl: './viewmobiles.component.html',
@@ -11,6 +12,8 @@ import {Product} from '../models/product.model';
 })
 export class ViewmobilesComponent implements OnInit {
 
+  p=1;
+  searchTerm:string;
   mobiles:Product[];
   editMobileIndex;
   editMobileObj=new Mobile('','','','Add to Cart');

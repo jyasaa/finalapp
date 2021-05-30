@@ -1,3 +1,5 @@
+<input type="text" name="productTitle" placeholder="Search by brand" class="form-control mt-5 p-2" autocomplete="off" [(ngModel)]="searchTerm">
+
 <div class="table-content mt-5">
 
     <form #ref="ngForm" (ngSubmit)="saveMobile(ref.value)">
@@ -9,9 +11,9 @@
                 <th>Image</th>
             </thead>
             
-            <tbody>
+        <tbody>
                 
-                <tr *ngFor="let mobile of mobiles;let ind=index" style="height: 130px;">
+                <tr *ngFor="let mobile of mobiles | search: searchTerm | paginate: { itemsPerPage: 5, currentPage: p };let ind=index" style="height: 130px;">
                     <!-- product title -->
                     <td style="width: 500px;">
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
@@ -63,3 +65,7 @@
     </form>
 
 </div> 
+
+<div  class="text-center text-warning"> 
+    <pagination-controls (pageChange)="p=$event" ></pagination-controls>
+</div>

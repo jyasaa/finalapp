@@ -6,14 +6,25 @@
         <div class="main">
           <h2 id="heading" class=" text-center ">Login </h2> 
 
-          <form class="text-white" #ref="ngForm" (ngSubmit)="onLogin(ref)" >
+          <form class="text-white" #ref="ngForm" (ngSubmit)="  ref.form.valid && onLogin(ref)" >
             <div class="mb-3">
                 <label for="unm" class="form-label">Username</label>
-                <input type="text" class="form-control" id="unm"  name="username" autocomplete="off" required minlength="5"  ngModel>
+                <input type="text" class="form-control" id="unm"  name="username" autocomplete="off" minlength="4"  ngModel required #refUsername="ngModel">
+               
+                <p class="text-danger" *ngIf="(ref.submitted || refUsername.touched) && refUsername.errors?.required">* Username is Required</p>
+                <p class="text-danger" *ngIf="(ref.submitted || refUsername.touched) && refUsername.errors?.minlength">* Minimum Length should be 4</p>
+              
               </div>
+
+
+
               <div class="mb-3">
                 <label for="pwd" class="form-label">Password</label>
-                <input type="password" class="form-control" id="pwd" name="password" autocomplete="off" placeholder="Min of 8 characters" ngModel >
+                <input type="password" class="form-control" id="pwd" name="password" autocomplete="off" placeholder="Min of 8 characters" ngModel required #refPassword="ngModel" >
+                
+                <p class="text-danger" *ngIf="(ref.submitted || refPassword.touched) && refPassword.errors?.required">* Password is Required</p>
+
+
               </div>
               <button type="submit" class="btn btn-warning float-end w-25"><i class="far fa-paper-plane mx-2"></i>Login</button>
 
